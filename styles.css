@@ -1,0 +1,136 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+
+:root {
+    --fonte-padrao: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte-h1: "Passion One", sans-serif;
+    --fonte-texto: "Sriracha", sans-serif;
+
+    --cor0: #ffffff;
+    --cor1: #00000083;
+    --cor2: #f8afb6;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-size: 1em;
+}
+
+html, body {
+    min-height: 100vh;
+    background-color: var(--cor1);
+    font-family: var(--fonte-padrao);
+}
+
+header {
+    max-height: 300px;
+    background-color: var(--cor1);
+    color: var(--cor0);
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+header > h1 {
+    display: block;
+    font-variant: small-caps;
+    font-family: var(--fonte-h1);
+    font-size: 10vw;
+}
+
+header > p > a {
+    font-weight: bold;
+    color: var(--cor0);
+    text-decoration: none;
+    transition-duration: 0.3s;
+}
+
+header > p > a:hover {
+    color: var(--cor2);
+}
+
+main section {
+    background-color: var(--cor0);
+    font-family: var(--fonte-texto);
+    font-size: 3.5vw;
+    line-height: 2em;
+    padding-top: 10vh;
+    padding-right: 30px;
+    padding-bottom: 10vh;
+    padding-left: 30px;
+}
+
+main > section.img {
+    background-size: cover;
+    background-attachment: fixed;
+    box-shadow: inset 7px 11px 20px 0px var(--cor1);
+}
+
+main > section#img1 {
+    background-image: url("img/background001.jpg");
+    background-position: center center;
+    
+}
+
+main > section#img2 {
+    background-image: url("img/background002.jpg");
+}
+
+main > section.img > p {
+    display: inline-block;
+    background-color: var(--cor1);
+    color: var(--cor0);
+    text-shadow: 2px 4px 7px var(--cor1);
+    padding: 5px;
+}
+
+footer {
+    background-color: var(--cor1);
+    color: var(--cor0);
+    text-align: center;
+    padding: 10px;
+}
+
+footer > p > a{
+    color: var(--cor0);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+footer > p > a:hover{
+    text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+    header > p {
+        font-size: 3.3vw;
+    }
+}
+
+@media (max-width: 120px) {
+    main > section {
+        padding-left: 10px;
+
+    }
+}
+
+@media (max-width: 275px) {
+    footer > p {
+        font-size: 5.8vw;
+    }
+}
+
+@media (max-width: 220px) {
+    footer > p {
+        font-size: 5.5vw;
+    }
+}
+
+@media (max-width: 144px) {
+    footer > p {
+        font-size: 5.33vw;
+    }
+}
